@@ -20,7 +20,7 @@ class BaseController{
         return new ob_get_clean();
     }
 
-    public function viewResponse($request){
+    public function view($request){
         return new Response($this->viewString($request));
     }
 }
